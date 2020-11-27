@@ -1,0 +1,111 @@
+/* setting background colour with opacity (there's no CSS property background-opacity) */
+body::after {
+    background-image: url(https://tr-images.condecdn.net/image/ddv8RbervyX/crop/2040/f/restaurant-story-nov18-pr.jpg);
+    width: 100%;
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+/* setting content of h1 and h2 in the middle of the page */
+.content {
+    max-width: 1200px;
+    padding-top: 130px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.thebox {
+    text-align: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 0 20px 0 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    grid-column: 4 / span 6;
+    margin-top: 70px;
+    height: 300px;
+}
+
+.thebox:after {
+    content: "”";
+    color:rgb(153, 59, 59);
+    font-size: 120px;
+    line-height: 0.7;
+    grid-column: 6 / span 1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    grid-column: 6 / span 2;
+    margin-bottom: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .buttonOne {
+    float: left;
+    font-size: 100px;
+    grid-column: 3;
+    margin: 170px 0 0 20px;
+}
+
+.buttonTwo {
+    float: right;
+    font-size: 100px;
+    grid-column: 10;
+    margin: 170px 20px 0 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: rgb(153, 59, 59);
+}
+
+a:hover {
+    color: gray;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: -65px;
+    border: 2px solid white;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: 17;
+    color: white;
+    letter-spacing: 0.4px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+h4 {
+    font-size: 22;
+    color: white;
+    font-weight: 400;
+}
+
+h1 {
+    line-height: 0.2;
+    margin-top: 5px;
+}
+
+h2 {
+    color: rgb(153, 59, 59);
+}

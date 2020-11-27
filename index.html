@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <link rel="stylesheet" type="text/css" href="style.css">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content">
+            <div class="text">
+                <h2>CLIENT</h2>
+                <h1>TESTIMONIALS</h1>
+            </div>
+
+            <div class="buttonOne">
+                <a href="#" class="previous round" onclick="plusSlides(-1)">&#8249;</a>
+            </div>
+
+            <div class="thebox">
+                 <div class="testimonial" id="testimonial">
+<!-- TESTIMONIAL 1 -->
+                     <div class="img-area">
+                        <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4>Holly Howard</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et diam dictum nisi faucibus rhoncus. Integer gravida dui eget lectus posuere elementum. </p>
+                    </div>
+                 </div>
+  <!-- TESTIMONIAL 2 -->
+                     <div class="testimonial" id="testimonial">
+                        <div class="img-area">
+                            <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h4>Same Diaz</h4>
+                            <p>Mi in nulla posuere sollicitudin aliquam. Quis vel eros donec ac odio. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. </p>
+                        </div>
+                    </div>
+  <!-- TESTIMONIAL 3 -->
+                    <div class="testimonial" id="testimonial">
+                        <div class="img-area">
+                            <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h4>Ian Alexander</h4>
+                            <p>Elementum tempus egestas sed sed risus pretium quam. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Pharetra et ultrices neque ornare aenean euismod elementum. </p>
+                        </div>
+                    </div>
+  <!-- TESTIMONIAL 4 -->
+                     <div class="testimonial" id="testimonial">
+                        <div class="img-area">
+                            <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h4>Cathy Butler</h4>
+                            <p>Mi in nulla posuere sollicitudin. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. </p>
+                        </div>
+                    </div>
+  <!-- TESTIMONIAL 5 -->
+                    <div class="testimonial" id="testimonial">
+                        <div class="img-area">
+                            <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h4>Wallace Vasquez</h4>
+                            <p>Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Vitae sapien pellentesque habitant morbi tristique senectus et netus. </p>
+                        </div>
+                    </div>      
+            </div>  
+            <div class="buttonTwo ">
+                <a href="#" class="next round" onclick="plusSlides(1)">&#8250;</a>
+            </div>  
+        </div>  
+
+
+    </body>
+    <script type="text/javascript">
+
+    var slideIndex = 1;
+    showSlides(slideIndex); 
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("testimonial");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i=0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block"; 
+    }
+    console.log(showSlides);
+
+    
+    </script>
+</html>
+
